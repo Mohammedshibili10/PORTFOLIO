@@ -1,0 +1,65 @@
+import React from 'react'
+import { FaGithub } from "react-icons/fa";
+import { MdArrowOutward, MdDescription } from "react-icons/md";
+export default function Projectpage() {
+    const project = [{
+        id:1,
+        image: "",
+        title: "Promotional landing page for our favorite show",
+        Description: "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
+        year: "2023",
+        role: "Front-end Developer"
+    },
+    {
+        id:2,
+        image: "",
+        title: "Blog site for World News",
+        Description: "Mastered CSS Grid complexities in building an innovative news homepage, navigating intricate design decisions for a seamless user experience. Leveraged the challenge to enhance skills in  front-end development.",
+        year: "2023",
+        role: "Front-end Developer"
+    },
+    {
+        id:3,
+        image: "",
+        title: "Promotional landing page for our favorite show",
+        Description: "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
+        year: "2023",
+        role: "Front-end Developer"
+    },]
+    return (
+        <div>
+            {project.map((work)=>(
+            <div className='flex-cols md:flex-cols lg:flex  gap-25 mt-10 md:mt-20 font-display md:ml-10 lg:ml-20'>
+                <div className='  sm:w-90 md:w-150 h-100 md:h-120 bg-[#1A1A1A] rounded-lg flex items-center justify-center '>
+                    <img className='border w-70  md:w-110 h-75 md:h-80 rounded-lg' src={work.image} alt="error" />
+                </div>
+                <div className='space-y-7 mt-8 md:mt-12'>
+                    <div className=' max-w-md md:max-w-xl '>
+                        <h1 className='text-2xl md:text-4xl'>{work.title}</h1>
+                        <p className='text-sm md:text-md text-justify text-[#C7C7C7]'>{work.Description}</p>
+                    </div>
+                    <div className=' space-y-2'>
+                        <h1>PROJECT INFO</h1>
+                        <hr ></hr>
+                        <div className='flex justify-between'>
+                            <p className='text-sm'>Year</p>
+                            <p className='text-sm text-[#C7C7C7]'>{work.year}</p>
+                        </div>
+                        <hr ></hr>
+                        <div className='flex justify-between'>
+                            <p className='text-sm'>Role</p>
+                            <p className='text-sm text-[#C7C7C7]'>{work.role}</p>
+                        </div>
+                        <hr ></hr>
+                    </div>
+                    <div className='flex gap-5 mt-12'>
+                        <h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'>LIVE DEMO<MdArrowOutward className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline ' /> </h1>
+                        <h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'> SEE ON GITHUB<FaGithub className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline' /> </h1>
+                    </div>
+                </div>
+            </div>
+            ))}
+            
+        </div>
+    )
+}
