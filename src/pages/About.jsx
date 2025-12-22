@@ -3,6 +3,9 @@ import Navbar from '../components/Navbar'
 import { MdArrowOutward, MdDescription } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import Form from '../components/Form';
 
 export default function About() {
   return (
@@ -78,6 +81,26 @@ export default function About() {
         </div>
         <hr className='text-[#222222]'></hr>
       </div>
+
+      {/* CONTACT */}
+              <div className='text-white lg:flex lg:gap-50 mb-20'>
+                <div className='px-5 md:px-20 lg:px-50 py-20'>
+                  <div className='max-w-md space-y-1'>
+                    <h1 className='text-4xl md:text-[50px] lg:text-6xl tracking-tight  font-bold'>LET`S CONNECT</h1>
+                    <p className=''>Say hello at <span className='border-b border-[#D3E97A]'> shibiliek516@gmail.com</span></p>
+                    <p>For more info here`s my <span className='border-b border-[#D3E97A]'>resume</span></p>
+                  </div>
+                  <div className='flex gap-5 mt-10   '>
+                    <FaLinkedinIn className='w-8 h-8 text-[#D3E97A]' />
+                    <FaGithub className='w-8 h-8 text-[#D3E97A]' />
+                    <FaXTwitter className='w-8 h-8  text-[#D3E97A]' />
+                    <FaInstagram className='w-8 h-8  text-[#D3E97A]' />
+                  </div>
+                </div>
+                <div>
+                  <Form />
+                </div>
+              </div>
 
 
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [open,setOpen]=useState(false)
@@ -15,7 +16,7 @@ export default function Navbar() {
             </div>
             <div className='hidden  lg:flex gap-20 mt-2 font-bold'>
                 <p>WORK</p>
-                <p>ABOUT</p>
+                <Link to={'/about'}><p>ABOUT</p></Link>
                 <p>CONTACT</p>
             </div>
             <div className='lg:hidden ' >

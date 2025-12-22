@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 import Form from '../components/Form';
 import ClickSpark from '../components/Clickspark';
 import Particles from '../components/Particle';
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -60,7 +61,7 @@ export default function Home() {
             <div className=' max-w-3xl space-y-4 '>
               <h1 className='text-xl md:text-2xl lg:text-5xl  text-left '>I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h1>
               <p className=' text-sm md:text-md text-[#C7C7C7]'>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.</p>
-              <h1 className='text-sm md:text-md underline underline-offset-8 text-[#D3E97A] '>MORE ABOUT ME</h1>
+             <Link to={'/about'}> <h1 className='text-sm md:text-md underline underline-offset-8 text-[#D3E97A] '>MORE ABOUT ME</h1></Link>
             </div>
           </div>
           <hr className='mt-35 text-gray-500' ></hr>
@@ -71,7 +72,7 @@ export default function Home() {
             <div className='max-w-md space-y-1'>
               <h1 className='text-4xl md:text-[50px] lg:text-6xl tracking-tight  font-bold'>LET`S CONNECT</h1>
               <p className=''>Say hello at <span className='border-b border-[#D3E97A]'> shibiliek516@gmail.com</span></p>
-              <p>For more info here`s my <span className='border-b border-[#D3E97A]'>resume</span></p>
+              <p>For more info here`s my <span className='border-b border-[#D3E97A]'>Resume</span></p>
             </div>
             <div className='flex gap-5 mt-10   '>
               <FaLinkedinIn className='w-8 h-8 text-[#D3E97A]' />
@@ -83,9 +84,6 @@ export default function Home() {
           <div>
             <Form />
           </div>
-
-
-
         </div>
 
 
