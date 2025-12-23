@@ -6,6 +6,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import Form from '../components/Form';
+import aboutImage from '../assets/images/image.jpg'
+
 
 export default function About() {
   return (
@@ -26,7 +28,7 @@ export default function About() {
         </div>
       </div>
       <div className=' px-5 md:px-20 lg:px-40'>
-        <img className='w-screen h-80 md:h-100 lg:h-150 rounded-lg' src="src/assets/images/image.jpg" alt="error" />
+        <img className='w-screen h-80 md:h-100 lg:h-150 rounded-lg' src={aboutImage} alt="error" />
       </div>
 
       {/* MY CAPABILITES */}
