@@ -10,7 +10,7 @@ export default function Navbar() {
   }
   return (
     <div className='text-white relative'>
-        <div className='flex   justify-between  px-5 md:px-10 lg:px-20 py-7 border-b border-gray-500 rounded-xl'>
+        <div className='flex   justify-between  px-5 md:px-10 lg:px-20 py-4 md:py-7 border-b border-gray-500 rounded-xl'>
             <div>
                 <h1 className=' inline  text-lg md:text-2xl lg:text-2xl font-bold'>MOHAMMED <span className='block md:inline'>SHIBILI EK</span> </h1>
             </div>
