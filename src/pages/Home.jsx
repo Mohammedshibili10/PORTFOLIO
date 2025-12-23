@@ -9,6 +9,7 @@ import Form from '../components/Form';
 import ClickSpark from '../components/Clickspark';
 import Particles from '../components/Particle';
 import { Link } from 'react-router-dom'
+import shibiliImage from '../assets/images/shibili2.png'
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
               </div>
             </div>
             <div >
-              <img className= 'sm:w-100 sm:h-100   md:w-150 md:h-150 md:mt-10 lg:mt-20 rounded-xl relative' src="src/assets/images/shibili2.png" alt="error" />
+              <img className= 'sm:w-100 sm:h-100   md:w-150 md:h-150 md:mt-10 lg:mt-20 rounded-xl relative' src={shibiliImage} alt="error" />
             </div>
           </div>
        
