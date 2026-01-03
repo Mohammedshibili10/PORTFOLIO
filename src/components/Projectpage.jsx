@@ -54,7 +54,7 @@ export default function Projectpage() {
                         <hr ></hr>
                     </div>
                     <div className='flex gap-5 mt-12'>
-                    <a href="https://supplement-store-vse9-mohammedshibili10s-projects.vercel.app/" target='_blank' rel='noopener noreferrer'>    <h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'>LIVE DEMO<MdArrowOutward className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline ' /> </h1></a>
+                    <a href="https://supplement-store-vse9.vercel.app/" target='_blank' rel='noopener noreferrer'>    <h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'>LIVE DEMO<MdArrowOutward className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline ' /> </h1></a>
                        <a href="https://github.com/Mohammedshibili10/SUPPLEMENT-STORE"><h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'> SEE ON GITHUB<FaGithub className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline' /> </h1></a>
                     </div>
                 </div>
