@@ -8,7 +8,7 @@ export default function Featured() {
         <div className='max-w-md md:max-w-lg '>
             <div className='space-y-2 font-display'>
             <h1 className='text-3xl  md:text-5xl font-bold '>FEATURED PROJECTS</h1>
-            <p className='text-sm  md:text-md text-[#C7C7C7]'>Here are some of the selected projects that showcase my passion for front-end development.</p>
+            <p className='text-sm  md:text-md text-[#C7C7C7]'>Here are some of the selected projects that showcase my passion for full stack development.</p>
             </div>
         </div>
         <Projectpage/>

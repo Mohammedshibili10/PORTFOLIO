@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Form() {
   return (
-    <div className='lg:mt-20  px-5 md:px-20 lg:px-0'>
+    <div className='lg:mt-20  px-5  md:px-20 lg:px-0'>
         <div className='space-y-3 '>
             <label className='block text-[#C7C7C7]'>Name</label>
             <input className='bg-[#1A1A1A] w-85 sm:w-95 md:w-130 h-12 rounded-md' type="text" />

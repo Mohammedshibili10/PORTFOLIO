@@ -1,14 +1,15 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { MdArrowOutward, MdDescription } from "react-icons/md";
+import image from '../assets/images/image.png'
 export default function Projectpage() {
     const project = [{
         id:1,
-        image: "",
-        title: "Promotional landing page for our favorite show",
-        Description: "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
-        year: "2023",
-        role: "Front-end Developer"
+        image: image,
+        title: "Supplement Store – Full Stack E-commerce Application",
+        Description: "A full-stack e-commerce web application for supplements built with React, Tailwind CSS, Node.js, Express, and MongoDB. The project includes dynamic product cards, product detail pages with routing, backend APIs, image handling, and a responsive user-friendly design optimized for performance.",
+        year: "2026",
+        role: "Full Stack Developer"
     },
     {
         id:2,
@@ -53,8 +54,8 @@ export default function Projectpage() {
                         <hr ></hr>
                     </div>
                     <div className='flex gap-5 mt-12'>
-                        <h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'>LIVE DEMO<MdArrowOutward className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline ' /> </h1>
-                        <h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'> SEE ON GITHUB<FaGithub className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline' /> </h1>
+                    <a href="https://supplement-store-vse9-mohammedshibili10s-projects.vercel.app/" target='_blank' rel='noopener noreferrer'>    <h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'>LIVE DEMO<MdArrowOutward className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline ' /> </h1></a>
+                       <a href="https://github.com/Mohammedshibili10/SUPPLEMENT-STORE"><h1 className='text-sm md:text-md text-[#D3E97A] underline  underline-offset-8'> SEE ON GITHUB<FaGithub className='w-5 h-5 ml-2 mb-1 text-[#D3E97A] inline' /> </h1></a>
                     </div>
                 </div>
             </div>
