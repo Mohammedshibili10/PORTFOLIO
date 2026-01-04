@@ -14,28 +14,29 @@ import shibiliImage from '../assets/images/shibili2.png'
 
 export default function Home() {
   return (
-    <ClickSpark
-      sparkColor='#fff'
-      sparkSize={30}
-      sparkRadius={40}
-      sparkCount={8}
-      duration={400}
-    >
-      <div className='text-white font-display '>
-        <div style={{ width: '100%', height: '100vh', position: ' absolute' }}>
-          <Particles
-            particleColors={['#ffffff', '#ffffff']}
-            particleCount={200}
-            particleSpread={10}
-            speed={0.1}
-            particleBaseSize={100}
-            moveParticlesOnHover={true}
-            alphaParticles={false}
-            disableRotation={false}
-          />
- </div>
+//     <ClickSpark
+//       sparkColor='#fff'
+//       sparkSize={30}
+//       sparkRadius={40}
+//       sparkCount={8}
+//       duration={400}
+//     >
+//       <div className='text-white font-display '>
+//         <div style={{ width: '100%', height: '100vh', position: ' absolute' }}>
+//           <Particles
+//             particleColors={['#ffffff', '#ffffff']}
+//             particleCount={200}
+//             particleSpread={10}
+//             speed={0.1}
+//             particleBaseSize={100}
+//             moveParticlesOnHover={true}
+//             alphaParticles={false}
+//             disableRotation={false}
+//           />
+//  </div>
+<div className='text-white font-display'>
           <Navbar />
-          <div className='relative md:flex-cols lg:flex justify-between px-5 md:px-20 lg:px-50 '>
+          <div className=' md:flex-cols lg:flex justify-between px-5 md:px-20 lg:px-50 '>
             <div className='md:max-w-lg space-y-2 py-10 md:py-10 lg:py-40'>
               <h1 className='text-5xl md:text-[85px] font-bold leading-none'>HI,I AM <span className='text-[#D3E97A]'> MOHAMMED SHIBILI EK</span></h1>
               <p className='text-md text-[#C7C7C7]' >Passionate MERN Stack Developer crafting fast, scalable, and user-friendly web applications with clean code and modern technologies.</p>
@@ -56,7 +57,7 @@ export default function Home() {
 
         {/* ABOUT ME */}
         <div>
-          <div className='px-5 md:px-20 lg:px-50 py-10 md:py-30 lg:flex  md:gap-90 '>
+          <div className='px-5 md:px-20 lg:px-50 py-10 md:py-30 lg:flex  md:gap-90  '>
             <div>
               <h1 className='text-4xl md:text-[50px] lg:text-6xl tracking-tight   font-bold'>ABOUT ME</h1>
             </div>
@@ -92,6 +93,6 @@ export default function Home() {
 
 
       </div>
-    </ClickSpark>
+    // </ClickSpark>
   )
 }
