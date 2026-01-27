@@ -4,7 +4,7 @@ import Projectpage from '../components/Projectpage'
 export default function Featured() {
   return (
     <div className='text-white  '>
-      <div className='px-5  md:px-20 lg:px-55 mt-40'>
+      <div className='px-5  md:px-20 xl:px-30 '>
         <div className='max-w-md md:max-w-lg '>
             <div className='space-y-2 font-display'>
             <h1 className='text-3xl  md:text-5xl font-bold '>FEATURED PROJECTS</h1>

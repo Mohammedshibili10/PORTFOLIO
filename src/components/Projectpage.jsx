@@ -30,12 +30,12 @@ export default function Projectpage() {
     return (
         <div>
             {project.map((work)=>(
-            <div className='flex-cols md:flex-cols lg:flex  gap-25 mt-10 md:mt-20 font-display md:ml-10 lg:ml-20'>
-                <div className='  sm:w-90 md:w-150 h-100 md:h-120 bg-[#1A1A1A] rounded-lg flex items-center justify-center '>
-                    <img className='border w-70  md:w-110 h-75 md:h-80 rounded-lg' src={work.image} alt="error" />
+            <div className=' flex-cols md:flex-cols lg:flex  gap-20 mt-10 md:mt-20 font-display md:ml-10 xl:ml-20'>
+                <div className='  sm:w-90 md:w-full h-100 md:h-120 bg-[#1A1A1A] rounded-lg flex items-center justify-center '>
+                    <img className='border w-70 md:w-100 lg:w-80 xl:w-110 h-75 md:h-80 rounded-lg' src={work.image} alt="error" />
                 </div>
-                <div className='space-y-7 mt-8 md:mt-12'>
-                    <div className=' max-w-md md:max-w-xl '>
+                <div className=' w-full space-y-7 mt-8 md:mt-12'>
+                    <div className=' '>
                         <h1 className='text-2xl md:text-4xl'>{work.title}</h1>
                         <p className='text-sm md:text-md text-justify text-[#C7C7C7]'>{work.Description}</p>
                     </div>

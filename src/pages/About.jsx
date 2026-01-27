@@ -18,12 +18,12 @@ export default function About() {
        <div className='hidden lg:block relative top-5 left-20 text-gray-300 '>
               <Link to="/">  <button className=' hover:text-white text-sm border-b  rounded-lg w-25 h-8'>Home <IoReturnDownBackSharp className='inline w-7 h-7' /></button></Link> 
             </div>
-      <div className='px-5 md:px-20 lg:px-40 py-10 md:py-20   lg:flex justify-between lg:gap-30   '>
+      <div className='px-5 md:px-20 lg:px-20  py-10 md:py-20   lg:flex justify-between xl:gap-30   '>
         <div>
-          <h1 className='text-4xl w-80  md:text-[50px] lg:text-6xl text-white  font-bold'>ABOUT ME</h1>
+          <h1 className='text-4xl w-80  md:text-[50px] lg:text-5xl xl:text-6xl text-white  font-bold'>ABOUT ME</h1>
         </div>
         <div className=' space-y-4 '>
-          <h1 className='text-xl md:text-3xl lg:text-5xl   text-white '>I’m a MERN Stack Developer skilled in MongoDB, Express, React, and Node.js, focused on building fast, scalable, and user-friendly web applications. </h1>
+          <h1 className='text-xl md:text-3xl lg:text-4xl   text-white '>I’m a MERN Stack Developer skilled in MongoDB, Express, React, and Node.js, focused on building fast, scalable, and user-friendly web applications. </h1>
           <p className=' text-sm md:text-md lg:text-lg text-[#C7C7C7]'>I am a passionate MERN Stack Developer who builds modern, high-performance web applications using MongoDB, Express.js, React.js, and Node.js. I focus on writing clean, scalable code and creating intuitive user experiences while continuously upgrading my skills to deliver impactful digital solutions.</p>
           <div className='flex gap-5 mt-10'>
             <button className=' text-md bg-[#D3E97A] w-50 h-13 pl-2 pt-1 rounded-full text-black font-bold '> DOWNLOAD RESUME<MdArrowOutward className='w-6 h-6 ml-2 mb-1  inline ' />  </button>
@@ -32,15 +32,15 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className=' px-5 md:px-20 lg:px-40'>
+      <div className=' px-5 md:px-20 lg:px-20 '>
         <img className='w-screen h-80 md:h-100 lg:h-150 rounded-lg' src={aboutImage} alt="error" />
       </div>
 
       {/* MY CAPABILITES */}
       <div className='text-white mt-10 lg:mt-25 '>
-        <div className='lg:flex justify-between gap-30 px-5 md:px-20 lg:px-40 mb-20 '>
+        <div className='lg:flex justify-between gap-30 px-5 md:px-20 lg:px-20 mb-20 '>
           <div>
-            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold'>MY CAPABILITIES</h1>
+            <h1 className='text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold'>MY CAPABILITIES</h1>
           </div>
           <div className='max-w-3xl'>
             <p className='lg:text-lg text-[#C7C7C7]'>Full-stack MERN developer skilled in building responsive user interfaces, secure RESTful APIs, and scalable database-driven applications. I focus on clean code, performance, and delivering reliable end-to-end web solutions.</p>
@@ -65,9 +65,9 @@ export default function About() {
       {/* EXPERINCE */}
 
       <div className='text-white'>
-        <div className='lg:flex justify-between gap-30 px-5 md:px-20 lg:px-40 mt-10 md:mt-20 mb-20 '>
+        <div className='lg:flex justify-between gap-30 px-5 md:px-20 lg:px-20 mt-10 md:mt-20 mb-20 '>
           <div>
-            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold'>MY EXPERIENCE</h1>
+            <h1 className='text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold'>MY EXPERIENCE</h1>
           </div>
           <div>
             <div className='max-w-3xl space-y-1 md:space-y-3 mt-5 md:mt-0'>
@@ -90,24 +90,44 @@ export default function About() {
       </div>
 
       {/* CONTACT */}
-              <div className='text-white lg:flex lg:gap-50 mb-20'>
-                <div className='px-5 md:px-20 lg:px-50 py-20'>
-                  <div className='max-w-md space-y-1'>
-                    <h1 className='text-4xl md:text-[50px] lg:text-6xl tracking-tight  font-bold'>LET`S CONNECT</h1>
-                    <p className=''>Say hello at <span className='border-b border-[#D3E97A]'> shibiliek516@gmail.com</span></p>
-                    <p>For more info here`s my <span className='border-b border-[#D3E97A]'>resume</span></p>
-                  </div>
-                  <div className='flex gap-5 mt-10   '>
-                   <a href="https://www.linkedin.com/in/mohammed-shibili-ek" target='_blank'  rel="noopener noreferrer"> <FaLinkedinIn className='w-8 h-8 text-[#D3E97A]' /></a>
-                    <a href="https://github.com/Mohammedshibili10" target='_blank'  rel="noopener noreferrer"> <FaGithub className='w-8 h-8 text-[#D3E97A]' /></a>
-                    <a href="https://x.com/shibili_233" target='_blank' rel='noopener noreferrer'> <FaXTwitter className='w-8 h-8  text-[#D3E97A]' /></a>
-                    <a href="https://www.instagram.com/_.shibili._____?igsh=MTM0NzJlNGpvaGwzaA==" target='_blank' rel='noopener noreferrer'><FaInstagram className='w-8 h-8  text-[#D3E97A]' /></a>
-                  </div>
-                </div>
-                <div>
-                  <Form />
-                </div>
-              </div>
+             
+                   {/* GRID WRAPPER */}
+                   <div className="grid grid-cols-2  xl:gap-32 items-start text-white">
+             
+                     {/* LEFT */}
+                     <div className="px-5 md:px-20 lg:px-20 py-20">
+                       <div className="max-w-md space-y-2">
+                         <h1 className="text-4xl md:text-[50px] lg:text-6xl font-bold tracking-tight">
+                           LET’S CONNECT
+                         </h1>
+             
+                         <p>
+                           Say hello at{" "}
+                           <span className="border-b border-[#D3E97A]">
+                             shibiliek516@gmail.com
+                           </span>
+                         </p>
+             
+                         <p>
+                           For more info here’s my{" "}
+                           <span className="border-b border-[#D3E97A]">Resume</span>
+                         </p>
+                       </div>
+             
+                       <div className="grid grid-cols-4 gap-5 mt-10 w-fit">
+                         <FaLinkedinIn className="w-8 h-8 text-[#D3E97A]" />
+                         <FaGithub className="w-8 h-8 text-[#D3E97A]" />
+                         <FaXTwitter className="w-8 h-8 text-[#D3E97A]" />
+                         <FaInstagram className="w-8 h-8 text-[#D3E97A]" />
+                       </div>
+                     </div>
+             
+                     {/* RIGHT */}
+                     <div className="pt-20">
+                       <Form />
+                     </div>
+             
+                   </div>
 
 
 
