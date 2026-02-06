@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className='absolute top-20 left-0 w-full h-screen bg-black  '>
             <div className='flex flex-col items-center py-10 space-y-6'>
               <Link to={'/'} onClick={() => setOpen(false)}><div className=' flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>HOME</div></Link>
-              <div className='flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>WORK</div>
+             <Link to={'/work'} ><div className='flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>WORK</div></Link>
               <Link to={'/about'} onClick={() => setOpen(false)}><div className='flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>ABOUT</div></Link>
               <Link to={'/contact'} onClick={() => setOpen(false)}><div className=' flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>CONTACT</div></Link>
             </div>

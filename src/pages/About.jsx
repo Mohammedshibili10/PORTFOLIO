@@ -73,9 +73,9 @@ export default function About() {
             <div className='max-w-3xl space-y-1 md:space-y-3 mt-5 md:mt-0'>
               <div className='md:flex justify-between '>
                 <h1 className='text-2xl md:text-3xl'>Freelance Developer</h1>
-                <p className='md:mt-3 text-sm lg:text-md  text-[#C7C7C7]'>Nov 2023 — Present </p>
+                <p className='md:mt-3 text-sm lg:text-md  text-[#C7C7C7]'> Present </p>
               </div>
-              <p className='text-md md:text-lg mt-3 md:mt-0 text-[#C7C7C7]'> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+              <p className='text-md md:text-lg mt-3 md:mt-0 text-[#C7C7C7]'>  </p>
 
               <div className='md:flex justify-between mt-10 md:mt-20'>
                 <h1 className='text-2xl md:text-3xl'>Mern Stack eveloper</h1>
