@@ -1,40 +1,87 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Send } from "lucide-react";
 
 export default function Form() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    // later: send email / API call
+  };
+
+  const inputClasses =
+    "w-full bg-[#1A1A1A] text-white px-5 py-4 rounded-xl outline-none focus:ring-2 focus:ring-[#D3E97A] placeholder-gray-500";
+
   return (
-    <div className=" px-5 md:px-10 lg:px-20 mt-10 md:mt-0 flex justify-center">
-      
-      <div className="space-y-3 w-full ">
-        
-        <label className="block text-[#C7C7C7]">Name</label>
+    <form onSubmit={handleSubmit} className="space-y-8">
+
+      {/* NAME + EMAIL */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <input
           type="text"
-          className="bg-[#1A1A1A] w-full h-12 rounded-md px-4 text-white outline-none"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={(e) =>
+            setFormData({ ...formData, name: e.target.value })
+          }
+          className={inputClasses}
+          required
+          maxLength={100}
         />
 
-        <label className="block text-[#C7C7C7]">Email</label>
         <input
           type="email"
-          className="bg-[#1A1A1A] w-full h-12 rounded-md px-4 text-white outline-none"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={(e) =>
+            setFormData({ ...formData, email: e.target.value })
+          }
+          className={inputClasses}
+          required
+          maxLength={255}
         />
-
-        <label className="block text-[#C7C7C7]">Subject</label>
-        <input
-          type="text"
-          className="bg-[#1A1A1A] w-full h-12 rounded-md px-4 text-white outline-none"
-        />
-
-        <label className="block text-[#C7C7C7]">Message</label>
-        <textarea
-          className="bg-[#1A1A1A] w-full h-40 rounded-md px-4 py-3 text-white outline-none resize-none"
-        ></textarea>
-
-        <button className="block w-40 h-12 rounded-full text-black font-bold text-lg bg-[#D3E97A] mt-5">
-          SUBMIT
-        </button>
-
       </div>
 
-    </div>
-  )
+      {/* SUBJECT */}
+      <input
+        type="text"
+        placeholder="Subject"
+        value={formData.subject}
+        onChange={(e) =>
+          setFormData({ ...formData, subject: e.target.value })
+        }
+        className={inputClasses}
+        required
+        maxLength={200}
+      />
+
+      {/* MESSAGE */}
+      <textarea
+        placeholder="Your Message"
+        rows={5}
+        value={formData.message}
+        onChange={(e) =>
+          setFormData({ ...formData, message: e.target.value })
+        }
+        className={`${inputClasses} resize-none`}
+        required
+        maxLength={1000}
+      />
+
+      {/* BUTTON */}
+      <button
+        type="submit"
+        className="group flex items-center gap-3 bg-[#D3E97A] text-black px-8 py-3.5 rounded-full font-semibold text-sm uppercase tracking-wider hover:brightness-110 transition-all duration-300"
+      >
+        Send Message
+        <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+      </button>
+    </form>
+  );
 }

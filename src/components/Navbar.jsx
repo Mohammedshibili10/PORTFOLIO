@@ -27,16 +27,43 @@ export default function Navbar() {
           }
 
         </div>
-        {open && (
-          <div className='absolute top-20 left-0 w-full h-screen bg-black  '>
-            <div className='flex flex-col items-center py-10 space-y-6'>
-              <Link to={'/'} onClick={() => setOpen(false)}><div className=' flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>HOME</div></Link>
-             <Link to={'/work'} ><div className='flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>WORK</div></Link>
-              <Link to={'/about'} onClick={() => setOpen(false)}><div className='flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>ABOUT</div></Link>
-              <Link to={'/contact'} onClick={() => setOpen(false)}><div className=' flex items-center justify-center border border-[#D3E97A] text-lg w-[320px]  h-12 text-center  rounded-lg hover:bg-[#D3E97A] active:bg-[#D3E97A]'>CONTACT</div></Link>
-            </div>
+
+        <div
+          className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-300
+    ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}
+          onClick={() => setOpen(false)}
+        />
+
+        {/* SIDEBAR */}
+        <div
+          className={`fixed top-0 right-0 z-50 h-screen w-[320px] bg-[#0d0d0d] border-l border-[#222]
+    transform transition-transform duration-500 ease-in-out
+    ${open ? "translate-x-0" : "translate-x-full"}`}
+        >
+          <div className="flex flex-col items-center py-16 space-y-8 text-white">
+
+            {[
+              { name: "HOME", path: "/" },
+              { name: "WORK", path: "/work" },
+              { name: "ABOUT", path: "/about" },
+              { name: "CONTACT", path: "/contact" },
+            ].map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                onClick={() => setOpen(false)}
+                className="group w-[260px]"
+              >
+                <div
+                  className="flex items-center justify-center h-14 rounded-xl border border-[#D3E97A] text-lg font-semibold tracking-wider transition-all duration-300 hover:bg-[#D3E97A] hover:text-black hover:shadow-lg hover:shadow-[#D3E97A]/30"
+                >
+                  {item.name}
+                </div>
+              </Link>
+            ))}
+
           </div>
-        )}
+        </div>
       </div>
 
 

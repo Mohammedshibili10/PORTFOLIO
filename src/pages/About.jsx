@@ -9,7 +9,10 @@ import Form from '../components/Form';
 import aboutImage from '../assets/images/image.jpg'
 import { IoReturnDownBackSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-
+import { FaArrowDown } from 'react-icons/fa';
+import Footer from '../components/Footer';
+import { MdOutlineEmail } from "react-icons/md";
+import { ArrowUpRight } from "lucide-react";
 
 export default function About() {
   return (
@@ -91,46 +94,70 @@ export default function About() {
 
       {/* CONTACT */}
              
-                   {/* GRID WRAPPER */}
-                   <div className="grid grid-cols-2  xl:gap-32 items-start text-white">
-             
-                     {/* LEFT */}
-                     <div className="px-5 md:px-20 lg:px-20 py-20">
-                       <div className="max-w-md space-y-2">
-                         <h1 className="text-4xl md:text-[50px] lg:text-6xl font-bold tracking-tight">
-                           LET’S CONNECT
-                         </h1>
-             
-                         <p>
-                           Say hello at{" "}
-                           <span className="border-b border-[#D3E97A]">
-                             shibiliek516@gmail.com
-                           </span>
-                         </p>
-             
-                         <p>
-                           For more info here’s my{" "}
-                           <span className="border-b border-[#D3E97A]">Resume</span>
-                         </p>
-                       </div>
-             
-                       <div className="grid grid-cols-4 gap-5 mt-10 w-fit">
-                         <FaLinkedinIn className="w-8 h-8 text-[#D3E97A]" />
-                         <FaGithub className="w-8 h-8 text-[#D3E97A]" />
-                         <FaXTwitter className="w-8 h-8 text-[#D3E97A]" />
-                         <FaInstagram className="w-8 h-8 text-[#D3E97A]" />
-                       </div>
+                <main className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-16 lg:py-28 text-white">
+        <div className="grid  sm:grid-cols-2 gap-20">
+
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+              Get in touch <br /> with me!
+            </h1>
+
+            <p className="text-gray-400 mt-6 max-w-md">
+              If you have any inquiries or just want to say hello, please use
+              the contact form!
+            </p>
+
+            <a
+              href="mailto:shibiliek516@gmail.com"
+              className="flex items-center gap-4 mt-12 w-fit"
+            >
+              <div className="w-12 h-12 rounded-full bg-[#D3E97A] flex items-center justify-center">
+                <MdOutlineEmail className="text-black w-5 h-5" />
+              </div>
+              <span className="underline underline-offset-4 text-lg break-all">
+                shibiliek516@gmail.com
+              </span>
+            </a>
+
+          
+          <div className="flex gap-6 mt-10 text-[#D3E97A]">
+                       <a href="https://www.linkedin.com/in/mohammed-shibili-ek" target='_blank'  rel="noopener noreferrer">  <FaLinkedinIn size={22} /></a>
+                     <a href="https://github.com/Mohammedshibili10" target='_blank'  rel="noopener noreferrer">  <FaGithub size={22} /></a> 
+                        <a href="https://x.com/shibili_233" target='_blank'  rel="noopener noreferrer">  <FaXTwitter size={22} /></a>
+                       <a href="https://www.instagram.com/_.shibili._____?igsh=MTM0NzJlNGpvaGwzaA==" target='_blank'  rel="noopener noreferrer">   <FaInstagram size={22} /></a>
                      </div>
-             
-                     {/* RIGHT */}
-                     <div className="pt-20">
-                       <Form />
-                     </div>
-             
-                   </div>
+         
 
+       
+            <div className="mt-14 p-6 rounded-2xl bg-[#111] border border-[#222] max-w-md">
+              <p className="text-sm text-gray-400">Available for</p>
+              <p className="mt-1 text-lg font-semibold">
+                Freelance & Full-time roles
+              </p>
 
+              <div className="mt-3 flex items-center gap-2 text-[#D3E97A] text-sm font-medium">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-[#D3E97A] opacity-75 animate-ping" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#D3E97A]" />
+                </span>
+                Currently open to work
+              </div>
+            </div>
+          </div>
 
+      
+          <div id="contact-form">
+            <h2 className="text-2xl font-semibold mb-10 flex items-center gap-2">
+              Send a message
+              <ArrowUpRight className="w-5 h-5 text-[#D3E97A]" />
+            </h2>
+
+            <Form />
+          </div>
+        </div>
+      </main>
+
+ <Footer/>
 
 
     </div>

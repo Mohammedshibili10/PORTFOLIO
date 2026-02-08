@@ -11,7 +11,7 @@ export default function Projectpage() {
         title: "Supplement Store – Full Stack E-commerce Application",
         Description: "A full-stack e-commerce web application for supplements built with React, Tailwind CSS, Node.js, Express, and MongoDB. The project includes dynamic product cards, product detail pages with routing, backend APIs, image handling, and a responsive user-friendly design optimized for performance.",
         year: "2026",
-        role: "Full Stack Developer",
+        role: "Full Stack ",
          url:"https://supplement-store-e-commerce-project.vercel.app/",
          giturl:"https://github.com/Mohammedshibili10/SUPPLEMENT-STORE-E-COMMERCE-project-"
 
@@ -21,8 +21,8 @@ export default function Projectpage() {
         image: ltsintro,
         title: "LTS SMART SYSTEM - Frontend project",
         Description: " A modern smart systems website built to showcase building automation, security, and integrated technology solutions. The platform highlights services such as ELV, IT infrastructure, home automation, and audiovisual systems, delivering a clean UI with responsive design for seamless user experience.",
-        year: "2023",
-        role: "Front-end Developer",
+        year: "2025",
+        role: "Front-end ",
         siteurl:"https://lts-automations.vercel.app/",
         giturl:"https://github.com/Mohammedshibili10/LTS-SMART-SYSTEM"
     },
@@ -32,7 +32,7 @@ export default function Projectpage() {
         title: "NEXTX Games Store - Full Stack Project",
         Description: "Built a full-stack Gaming Store web application using the MERN stack (MongoDB, Express, React, Node.js). The platform allows users to browse products, add items to cart and wishlist, post reviews, and securely authenticate accounts. Designed a responsive and intuitive UI based on Figma, with a focus on smooth user experience and efficient backend API integration.",
         year: "Work is Ongoing ....",
-        role: "Front-end Developer"
+        role: "Full stack "
    
 
     },]
