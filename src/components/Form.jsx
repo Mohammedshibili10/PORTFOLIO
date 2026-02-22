@@ -77,7 +77,7 @@ export default function Form() {
       {/* BUTTON */}
       <button
         type="submit"
-        className="group flex items-center gap-3 bg-[#D3E97A] text-black px-8 py-3.5 rounded-full font-semibold text-sm uppercase tracking-wider hover:brightness-110 transition-all duration-300"
+        className="group flex items-center gap-3 bg-red-600 text-white text-black px-8 py-3.5 rounded-full font-semibold text-sm uppercase tracking-wider hover:brightness-110 transition-all duration-300"
       >
         Send Message
         <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />

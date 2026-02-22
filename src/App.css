@@ -3,3 +3,6 @@
 @theme{
     --font-display:"Space Grotesk", sans-serif;
 }
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+}
