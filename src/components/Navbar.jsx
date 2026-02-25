@@ -75,21 +75,22 @@
 //   )
 // }
 
-import { Hamburger, Link, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom"; // use React Router Link
 import { IoClose } from "react-icons/io5";
 
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
- 
-   const click = () => setOpen(prev => !prev);
- 
+
+  const click = () => setOpen(prev => !prev);
+
 
 
   return (
     <>
-       <h1></h1>
+      <h1></h1>
       {/* Toggle button – top right */}
       <button onClick={click}
         className="fixed top-6 right-6 z-[60] w-12 h-12 flex flex-col items-center justify-center gap-1.5 rounded-full bg-red-600/10 backdrop-blur-md border border-red-600/30 hover:bg-red-600/20 transition-all duration-300 glow-shadow">
@@ -112,7 +113,9 @@ const Navbar = () => {
           }`}
       >
         {/* Glow decoration */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1 
+         bg-gradient-to-r from-transparent  to-transparent 
+         blur-sm opacity-90" />
         <a
           href="#"
           className="font-display text-4xl text-red-600 tracking-wider mb-10"
@@ -128,26 +131,26 @@ const Navbar = () => {
           */}
 
 
-        <div className=" hover:text-red-600 transition-all duration-300 text-2xl font-medium tracking-widest uppercase py-3 px-8 w-full text-center hover:bg-red-500/5 hover:scale-115 " style={{
+        <Link to="/"><div className=" hover:text-red-600 transition-all text-white duration-300 text-2xl font-medium tracking-widest uppercase py-3 px-8 w-full text-center hover:bg-red-500/5 hover:scale-115 " style={{
           transitionDelay: open ? `${80 + 100}ms` : "0ms",
           opacity: open ? 1 : 0,
           transform: open ? "translateX(0)" : "translateX(30px)",
-        }}>home</div>
-        <div className="hover:text-red-600 transition-all duration-300 text-2xl font-medium tracking-widest uppercase py-3 px-8 w-full text-center hover:bg-red-500/5 hover:scale-115" style={{
+        }}>home</div></Link>
+        <Link to="/work"><div className="hover:text-red-600 transition-all text-white duration-300 text-2xl font-medium tracking-widest uppercase py-3 px-8 w-full text-center hover:bg-red-500/5 hover:scale-115" style={{
           transitionDelay: open ? `${80 + 100}ms` : "0ms",
           opacity: open ? 1 : 0,
           transform: open ? "translateX(0)" : "translateX(30px)",
-        }}>work</div>
-        <div className="hover:text-red-600 transition-all duration-300 text-2xl font-medium tracking-widest uppercase py-3 px-8 w-full text-center hover:bg-red-500/5 hover:scale-115" style={{
+        }}>work</div></Link>
+        <Link to="/about"><div className="hover:text-red-600 transition-all text-white duration-300 text-2xl font-medium tracking-widest uppercase py-3 px-8 w-full text-center hover:bg-red-500/5 hover:scale-115" style={{
           transitionDelay: open ? `${80 + 100}ms` : "0ms",
           opacity: open ? 1 : 0,
           transform: open ? "translateX(0)" : "translateX(30px)",
-        }}>about</div>
-        <div className="hover:text-red-600 transition-all duration-300 text-2xl font-medium tracking-widest uppercase py-3 px-8 w-full text-center hover:bg-red-500/5 hover:scale-115" style={{
+        }}>about</div></Link>
+        <Link to="/contact"><div className="hover:text-red-600 transition-all text-white duration-300 text-2xl font-medium tracking-widest uppercase py-3 px-8 w-full text-center hover:bg-red-500/5 hover:scale-115" style={{
           transitionDelay: open ? `${80 + 100}ms` : "0ms",
           opacity: open ? 1 : 0,
           transform: open ? "translateX(0)" : "translateX(30px)",
-        }}>contact</div>
+        }}>contact</div></Link>
 
       </nav>
     </>

@@ -4,6 +4,7 @@ import { MdArrowOutward, MdDescription } from "react-icons/md";
 import image from '../assets/images/image.png'
 import ltsintro from '../assets/images/ltsintro.jpeg'
 import nextxintro from '../assets/images/nextxintro.jpeg'
+
 export default function Projectpage() {
     const project = [{
         id:1,
@@ -39,6 +40,7 @@ export default function Projectpage() {
    
 
     },]
+   
     return (
         <div>
             {project.map((work)=>(

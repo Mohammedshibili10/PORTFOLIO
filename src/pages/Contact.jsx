@@ -24,7 +24,7 @@ export default function Contact() {
           {/* LEFT CONTENT */}
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-              Get in touch <br /> with me!
+              Get in touch <br /> <span className='text-red-600'>with me!</span>
             </h1>
 
             <p className="text-gray-400 mt-6 max-w-md">
@@ -37,8 +37,8 @@ export default function Contact() {
               href="mailto:shibiliek516@gmail.com"
               className="flex items-center gap-4 mt-12 w-fit"
             >
-              <div className="w-12 h-12 rounded-full bg-[#D3E97A] flex items-center justify-center">
-                <MdOutlineEmail className="text-black w-5 h-5" />
+              <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center">
+                <MdOutlineEmail className="text-white w-5 h-5" />
               </div>
               <span className="underline underline-offset-4 text-lg break-all">
                 shibiliek516@gmail.com
@@ -46,7 +46,7 @@ export default function Contact() {
             </a>
 
             {/* SOCIAL ICONS */}
-            <div className="flex gap-6 mt-10 text-[#D3E97A]">
+            <div className="flex gap-6 mt-10 text-red-600">
               <a href="https://www.linkedin.com/in/mohammed-shibili-ek" target='_blank'  rel="noopener noreferrer">  <FaLinkedinIn size={22} /></a>
             <a href="https://github.com/Mohammedshibili10" target='_blank'  rel="noopener noreferrer">  <FaGithub size={22} /></a> 
                <a href="https://x.com/shibili_233" target='_blank'  rel="noopener noreferrer">  <FaXTwitter size={22} /></a>
@@ -60,10 +60,10 @@ export default function Contact() {
                 Freelance & Full-time roles
               </p>
 
-              <div className="mt-3 flex items-center gap-2 text-[#D3E97A] text-sm font-medium">
+              <div className="mt-3 flex items-center gap-2 text-red-600 text-sm font-medium">
                 <span className="relative flex h-2.5 w-2.5">
-                  <span className="absolute inline-flex h-full w-full rounded-full bg-[#D3E97A] opacity-75 animate-ping" />
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#D3E97A]" />
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75 animate-ping" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
                 </span>
                 Currently open to work
               </div>
@@ -74,7 +74,7 @@ export default function Contact() {
           <div id="contact-form">
             <h2 className="text-2xl font-semibold mb-10 flex items-center gap-2">
               Send a message
-              <ArrowUpRight className="w-5 h-5 text-[#D3E97A]" />
+              <ArrowUpRight className="w-5 h-5 text-red-600" />
             </h2>
 
             <Form />

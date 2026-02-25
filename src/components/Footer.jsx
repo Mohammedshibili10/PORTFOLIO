@@ -15,7 +15,7 @@ export default function Footer() {
           <div className=''>
             <Link to="/">
               <h2 className="text-md font-bold font-display mb-2">
-                MOHAMMED <span className="text-[#D3E97A]">SHIBILI EK</span>
+                MOHAMMED <span className="text-red-600">SHIBILI EK</span>
               </h2>
             </Link>
             <p className="text-muted-foreground text-sm">
@@ -25,10 +25,10 @@ export default function Footer() {
           
           <div className="flex gap-6">
             
-         <FaLinkedinIn className="w-5 h-5 text-[#D3E97A]" />
-         <FaGithub className="w-5 h-5 text-[#D3E97A]" />
-         <FaXTwitter className="w-5 h-5 text-[#D3E97A]" />
-         <FaInstagram className="w-5 h-5 text-[#D3E97A]" />
+         <FaLinkedinIn className="w-5 h-5 text-red-600" />
+         <FaGithub className="w-5 h-5 text-red-600" />
+         <FaXTwitter className="w-5 h-5 text-red-600" />
+         <FaInstagram className="w-5 h-5 text-red-600" />
            
           
           </div>
