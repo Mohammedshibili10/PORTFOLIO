@@ -35,7 +35,7 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-bg-zoom"
             style={{ backgroundImage: `url(${me})` }}
           />
-          {/* Overlay gradient */}
+       
           <div className="absolute inset-0 bg-gradient-to-b from-red-900/10 via-red-800/0 to-red-600/40" />
           <div className="absolute inset-0 bg-red-900/5 " />
         </div>
@@ -67,15 +67,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
         <div className="absolute z-50 bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
           <FaArrowDown className="text-[#D3E97A] text-2xl" />
         </div>
       </section>
 
           <section>
-        <div className='px-5 md:px-20 lg:px-30 py-10 md:py-50 space-y-5 flex flex-row lg:flex-col gap-20 lg:gap-30 xl:gap-90  '>
-          <div className="lg:col-span-3 space-y-8 max-w-3xl">
+          <div className='px-5 md:px-20 lg:px-32 py-10 md:py-12 gap-8 lg:gap-12 xl:gap-24 lg:flex lg:flex-row'>
+          <div className="space-y-8 max-w-3xl lg:w-2/3">
             <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-1 rounded-full bg-white" />
             <span className="text-md font-semibold tracking-[0.25em] uppercase text-white">
@@ -94,31 +93,29 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full max-w-md space-y-6">
-
-            {[
-              { name: "React.js", icon: FaReact },
-              { name: "Node.js", icon: FaNodeJs },
-              { name: "MongoDB", icon: SiMongodb },
-              { name: "Express", icon: SiExpress },
-            ].map((skill, index) => (
-              <div
-                key={index}
-                className="group flex items-center justify-between border border-gray-200 rounded-2xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="bg-red-600/20 text-white p-3 rounded-md w-12 h-12 flex items-center justify-center">
-                    {skill.icon && React.createElement(skill.icon, { size: 30 })}
-                  </div>
-                  <h3 className="text-xl font-semibold">{skill.name}</h3>
-                </div>
-
-                <span className="w-3 h-3 bg-red-600 rounded-full group-hover:scale-125 transition-all duration-300"></span>
-              </div>
-            ))}
-
-
+         <div className="w-full sm:max-w-sm md:max-w-md py-10 space-y-6 lg:w-1/3">
+      {[
+        { name: "React.js", icon: FaReact },
+        { name: "Node.js", icon: FaNodeJs },
+        { name: "MongoDB", icon: SiMongodb },
+        { name: "Express", icon: SiExpress },
+      ].map((skill, index) => (
+        <div
+          key={index}
+          className="group flex items-center justify-between border border-gray-200 rounded-2xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+        >
+          <div className="flex items-center gap-4">
+            <div className="bg-red-600/20 text-white p-3 rounded-md w-12 h-12 flex items-center justify-center">
+              {skill.icon && React.createElement(skill.icon, { size: 30 })}
+            </div>
+            <h3 className="text-xl font-semibold">{skill.name}</h3>
           </div>
+
+          <span className="w-3 h-3 bg-red-600 rounded-full group-hover:scale-125 transition-all duration-300"></span>
+        </div>
+      ))}
+    </div>
+
         </div>
       </section>
 
@@ -127,31 +124,12 @@ export default function Home() {
         <Featured />
       </div>
 
-      {/* ABOUT ME */}
-
-
-      {/* <div>
-        <div className='px-5 md:px-20 lg:px-30 py-10 md:py-30 lg:flex lg:gap-30 xl:gap-90  '>
-          <div>
-            <h1 className='text-4xl md:text-[50px] lg:text-6xl   font-bold '>ABOUT <span className='text-red-600'> ME</span></h1>
-          </div>
-          <div className=' max-w-7xl space-y-4 '>
-            <h1 className='text-xl md:text-2xl lg:text-3xl xl:text-5xl text-left '>I’m a MERN Stack Developer skilled in MongoDB, Express, React, and Node.js, focused on building fast, scalable, and user-friendly web applications. </h1>
-            <p className=' text-sm md:text-md   text-[#C7C7C7]'>I am a passionate MERN Stack Developer who builds modern, high-performance web applications using MongoDB, Express.js, React.js, and Node.js. I focus on writing clean, scalable code and creating intuitive user experiences while continuously upgrading my skills to deliver impactful digital solutions.</p>
-            <Link to={'/about'}> <h1 className='text-md md:text-md underline underline-offset-8 text-red-600 '>MORE ABOUT ME</h1></Link>
-          </div>
-        </div>
-        <hr className='mt-35 text-gray-500' ></hr>
-      </div> */}
-    
-
-      {/* CONTACT */}
 
 
       <main className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-16 lg:py-28">
         <div className="grid  sm:grid-cols-2 gap-20">
 
-          {/* LEFT CONTENT */}
+       
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
               Get in touch <br /><span className='text-red-600'>with me!</span>
@@ -162,7 +140,7 @@ export default function Home() {
               the contact form!
             </p>
 
-            {/* EMAIL */}
+        
             <a
               href="mailto:shibiliek516@gmail.com"
               className="flex items-center gap-4 mt-12 w-fit"
@@ -175,7 +153,6 @@ export default function Home() {
               </span>
             </a>
 
-            {/* SOCIAL ICONS */}
             <div className="flex gap-6 mt-10 text-red-600">
               <a href="https://www.linkedin.com/in/mohammed-shibili-ek" target='_blank' rel="noopener noreferrer">  <FaLinkedinIn size={22} /></a>
               <a href="https://github.com/Mohammedshibili10" target='_blank' rel="noopener noreferrer">  <FaGithub size={22} /></a>
@@ -184,7 +161,7 @@ export default function Home() {
             </div>
 
 
-            {/* STATUS CARD */}
+           
             <div className="mt-14 p-6 rounded-2xl bg-[#111] border border-[#222] max-w-md">
               <p className="text-sm text-gray-400">Available for</p>
               <p className="mt-1 text-lg font-semibold">
@@ -201,7 +178,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* RIGHT FORM */}
+        
           <div id="contact-form">
             <h2 className="text-2xl font-semibold mb-10 flex items-center gap-2">
               Send a message
