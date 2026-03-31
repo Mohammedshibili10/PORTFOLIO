@@ -36,7 +36,9 @@ export default function Projectpage() {
         type:"Full Stack Project",
         Description: "Built a full-stack Gaming Store web application using the MERN stack (MongoDB, Express, React, Node.js). The platform allows users to browse products, add items to cart and wishlist, post reviews, and securely authenticate accounts. Designed a responsive and intuitive UI based on Figma, with a focus on smooth user experience and efficient backend API integration.",
         year: "Work is Ongoing ....",
-        role: "Full stack "
+        role: "Full stack ",
+        siteurl:"https://nextx-games-store.vercel.app/",
+        giturl:"https://github.com/Mohammedshibili10/NEXTX-GAMES-STORE/commits?author=Mohammedshibili10"
    
 
     },]
