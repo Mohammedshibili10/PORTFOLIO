@@ -14,7 +14,7 @@ export default function Projectpage() {
         Description: "A full-stack e-commerce web application for supplements built with React, Tailwind CSS, Node.js, Express, and MongoDB. The project includes dynamic product cards, product detail pages with routing, backend APIs, image handling, and a responsive user-friendly design optimized for performance.",
         year: "2026",
         role: "Full Stack ",
-         url:"https://supplement-store-e-commerce-project.vercel.app/",
+         siteurl:"https://supplement-store-e-commerce-project.vercel.app/",
          giturl:"https://github.com/Mohammedshibili10/SUPPLEMENT-STORE-E-COMMERCE-project-"
 
     },
